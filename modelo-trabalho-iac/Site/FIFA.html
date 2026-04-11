@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>História ....</title>
+</head>
+
+
+
+<body>
+<header>
+        <!-- Exemplo de título principal -->
+        <h1>FIFA</h1>
+        <p>Federação Internacional de Futebol Associado</p>
+        <nav>
+        <nav>
+            <a href="https://www.youtube.com/">Dossiês</a>
+        </nav>
+            <a href="comites.html">Voltar</a>
+        </nav>
+</header>
+
+     <!-- Botão de menu (hambúrguer) -->
+<div class="menu-toggle">&#9776;</div>
+
+<!-- Menu lateral -->
+<nav class="menu">
+  <a href="index.html">Inicio</a>
+  <a href="inscrições.html">Inscrições</a>
+  <a href="comites.html">Comitês</a>
+  <a href="fao.html">FAO</a>
+  <a href="FIFA.html">FIFA</a>
+  <a href="CSNU.html">UNSC</a>
+  <a href="UNDOC.html">UNODOC</a>
+</nav>
+
+<!-- Script -->
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  // abre o menu e esconde o botão
+  toggle.addEventListener('click', () => {
+    menu.classList.add('open');
+    toggle.style.display = 'none';
+  });
+
+  // fecha o menu ao clicar nele e mostra o botão novamente
+  menu.addEventListener('click', () => {
+    menu.classList.remove('open');
+    toggle.style.display = 'block';
+  });
+</script>
+
+<!-- CSS -->
+<style>
+  /* Botão de menu (hambúrguer) */
+  .menu-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  /* Menu lateral */
+  nav.menu {
+    position: fixed;
+    top: 0;
+    left: -350px;
+    width: 300px;
+    height: 100%;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    border-radius: 0 20px 20px 0;
+  }
+
+  nav.menu.open {
+    left: 0;
+  }
+
+  nav.menu a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 12px 0;
+    font-size: 1.2em;
+  }
+
+  nav.menu a:hover {
+    background: #f0f0f0;
+    border-radius: 8px;
+  }
+ </style>
+
+
+     <main>
+        
+        <h2>Contexto Atual</h2>
+        
+        
+        <p>Nos últimos anos, a FIFA tem intensificado sua atuação contra a impunidade e pela representatividade no futebol. O novo Código Disciplinar de 2025 trouxe medidas mais duras contra racismo, discriminação e corrupção, prevendo multas milionárias, paralisação de jogos e até exclusão de clubes e federações reincidentes. Esse movimento reflete a pressão social e política por um futebol mais justo, transparente e inclusivo, em que a diversidade seja respeitada e a violência simbólica ou física não tenha espaço.
+</p>
+
+
+
+        <h2>História e Evolução</h2>
+
+     <p>A luta contra a impunidade e pela representatividade na FIFA tem raízes antigas. Desde os anos 1990, campanhas como “Say No to Racism” marcaram o início de uma postura institucional contra práticas discriminatórias. Nos anos 2000, a criação de comitês de ética e disciplina buscou enfrentar escândalos de corrupção e manipulação de resultados. A partir de 2015, após a crise de credibilidade da entidade, houve uma reestruturação interna com maior foco em governança e transparência. Essa evolução mostra uma transição de campanhas simbólicas para medidas concretas de punição e prevenção.
+</p>
+      <h2>Estrutura e Funcionamento</h2>
+        
+      <p>A FIFA organiza sua atuação por meio de órgãos internos que garantem a aplicação das normas e o combate à impunidade. O Comitê Disciplinar é responsável por aplicar sanções a clubes, jogadores e federações, enquanto o Comitê de Ética investiga casos de corrupção, abuso de poder e violações de integridade. Além disso, protocolos específicos foram estabelecidos para situações de racismo e violência, permitindo que árbitros interrompam, suspendam ou encerrem partidas diante de atos discriminatórios. Essa estrutura busca assegurar que as regras sejam aplicadas de forma uniforme e que a justiça prevaleça em todas as esferas do futebol.</p>
+     
+      <h2>Programas Globais</h2>
+      
+      <p>A FIFA desenvolveu programas que reforçam sua atuação contra a impunidade e pela representatividade. Entre eles, o “Say No to Racism” promove campanhas de conscientização em torneios internacionais; o FIFA Guardians™ protege crianças e adolescentes contra abusos; o Football for Hope apoia projetos sociais em comunidades vulneráveis; e iniciativas de educação e capacitação exigem que federações nacionais adaptem seus regulamentos às normas internacionais. Esses programas demonstram que a entidade não atua apenas de forma punitiva, mas também preventiva e educativa, buscando transformar a cultura do futebol em escala global.</p>
+      
+      <h2>Desafios e Perspectivas Futuras</h2>
+      
+        <p>Apesar dos avanços, a FIFA enfrenta obstáculos significativos. A impunidade ainda é recorrente, com muitos casos de racismo e corrupção não resultando em punições exemplares. Em algumas regiões, há resistência cultural que normaliza práticas discriminatórias, dificultando a aplicação das normas. A corrupção estrutural em federações locais continua a minar a credibilidade da entidade, e a aplicação desigual dos protocolos evidencia que nem todas as associações nacionais seguem as diretrizes com rigor. O futuro, no entanto, aponta para uma FIFA mais rigorosa e tecnológica, com o uso de inteligência artificial para monitorar discursos de ódio em estádios e redes sociais, além da integração mais estreita entre regulamentos da entidade e legislações nacionais contra discriminação. A expansão de programas educativos voltados para jovens atletas e torcedores deve contribuir para uma mudança cultural duradoura, enquanto o fortalecimento de mecanismos de auditoria e compliance busca reduzir a corrupção e aumentar a transparência. Essas perspectivas indicam que o futebol caminha para se consolidar não apenas como espetáculo esportivo, mas também como espaço de cidadania, inclusão e justiça social.</p>
+
+    
+
+    </main>
+</body>
+
+</html>
+
+
+    
