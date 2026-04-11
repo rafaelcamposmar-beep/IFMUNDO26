@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>História ....</title>
+</head>
+<body>
+<header>
+        <!-- Exemplo de título principal -->
+        <h1>CSNU</h1>
+        <p>Conselho de segurança das nações unidas</p>
+        <nav>
+        <nav>
+            <a href="https://www.youtube.com/">Dossiês</a>
+        </nav>
+            <a href="comites.html">Voltar</a>
+        </nav>
+</header>
+
+     <!-- Botão de menu (hambúrguer) -->
+<div class="menu-toggle">&#9776;</div>
+
+<!-- Menu lateral -->
+<nav class="menu">
+  <a href="index.html">Inicio</a>
+  <a href="inscrições.html">Inscrições</a>
+  <a href="comites.html">Comitês</a>
+  <a href="fao.html">FAO</a>
+  <a href="FIFA.html">FIFA</a>
+  <a href="CSNU.html">UNSC</a>
+  <a href="UNDOC.html">UNODOC</a>
+</nav>
+
+<!-- Script -->
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  // abre o menu e esconde o botão
+  toggle.addEventListener('click', () => {
+    menu.classList.add('open');
+    toggle.style.display = 'none';
+  });
+
+  // fecha o menu ao clicar nele e mostra o botão novamente
+  menu.addEventListener('click', () => {
+    menu.classList.remove('open');
+    toggle.style.display = 'block';
+  });
+</script>
+
+<!-- CSS -->
+<style>
+  /* Botão de menu (hambúrguer) */
+  .menu-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  /* Menu lateral */
+  nav.menu {
+    position: fixed;
+    top: 0;
+    left: -350px;
+    width: 300px;
+    height: 100%;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    border-radius: 0 20px 20px 0;
+  }
+
+  nav.menu.open {
+    left: 0;
+  }
+
+  nav.menu a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 12px 0;
+    font-size: 1.2em;
+  }
+
+  nav.menu a:hover {
+    background: #f0f0f0;
+    border-radius: 8px;
+  }
+ </style>
+
+
+  <main>
+
+  <h2>Contexto Atual (até 1987)</h2>
+
+  <p>Em 1988, o Conselho de Segurança da ONU ainda operava sob forte influência da bipolaridade mundial, marcada pela disputa entre Estados Unidos e União Soviética. Essa rivalidade, que dominou todo o período da Guerra Fria, impactava diretamente a capacidade decisória do CSNU, já que o uso recorrente do poder de veto paralisava muitas iniciativas. A África, a América Latina e partes da Ásia eram palco de conflitos indiretos, alimentados pela lógica da disputa ideológica entre capitalismo e socialismo. Nesse cenário, o Conselho enfrentava dificuldades para agir de forma imparcial e efetiva, limitando sua atuação em crises humanitárias e de segurança internacional.</p>
+
+  <h2>História e Evolução</h2>
+
+  <p>Desde sua criação em 1945, o CSNU foi concebido como o principal órgão responsável pela manutenção da paz e segurança internacionais. No entanto, ao longo das décadas seguintes, sua atuação foi condicionada pela Guerra Fria. Nos anos 1950 e 1960, o Conselho já enfrentava impasses devido ao veto das superpotências. Nos anos 1970 e 1980, a situação se intensificou com a corrida armamentista e a intervenção indireta em conflitos regionais. Até 1987, a bipolaridade mundial havia transformado o CSNU em um espaço de disputa política, mais voltado para a defesa dos interesses das potências do que para a resolução efetiva de crises globais.</p>
+
+  <h2>Estrutura e Funcionamento</h2>
+
+  <p>O CSNU é composto por cinco membros permanentes — Estados Unidos, União Soviética, Reino Unido, França e China — e dez membros rotativos. A prerrogativa do veto dos membros permanentes foi o principal instrumento que refletiu a bipolaridade mundial. Durante a Guerra Fria, EUA e URSS utilizaram esse mecanismo para bloquear resoluções contrárias aos seus interesses estratégicos. Essa estrutura, embora concebida para garantir equilíbrio, acabou por limitar a eficácia do Conselho em momentos críticos, como guerras civis, intervenções militares e crises humanitárias.</p>
+
+  <h2>Desafios da Bipolaridade</h2>
+
+  <p>Até 1987, os principais desafios enfrentados pelo CSNU eram: 
+  - A paralisia decisória causada pelo uso frequente do veto.  
+  - A dificuldade em mediar conflitos regionais influenciados pela disputa ideológica.  
+  - A perda de credibilidade perante países emergentes e em desenvolvimento, que viam o Conselho como instrumento das superpotências.  
+  - A incapacidade de criar mecanismos efetivos de prevenção de crises, já que as decisões eram condicionadas por interesses geopolíticos.</p>
+
+  <h2>Consequências</h2>
+
+  <p>A bipolaridade mundial trouxe consequências diretas para o funcionamento do CSNU: 
+  - A fragmentação das alianças internacionais, com países alinhando-se a blocos opostos.  
+  - A intensificação de conflitos por procuração, especialmente na África e na Ásia.  
+  - A limitação da ONU em atuar como mediadora imparcial, já que o Conselho refletia a divisão global.  
+  - O atraso na construção de uma agenda multilateral de segurança, que só começaria a ganhar força com o fim da Guerra Fria nos anos 1990.</p>
+
+  <h2>Perspectivas em 1988</h2>
+
+  <p>Às vésperas de 1988, o CSNU se encontrava em um momento de transição. O início da política de <i>glasnost</i> e <i>perestroika</i> na União Soviética, somado ao desgaste da corrida armamentista, indicava uma possível abertura para maior cooperação internacional. No entanto, até 1987, os efeitos da bipolaridade ainda eram predominantes, e o Conselho permanecia limitado em sua capacidade de resposta. O futuro apontava para a necessidade de reformas estruturais e maior integração entre segurança e desenvolvimento, mas esse processo só se consolidaria após o fim da Guerra Fria.</p>
+
+</main>
+</body>
+
+</html>
+
+
+    
