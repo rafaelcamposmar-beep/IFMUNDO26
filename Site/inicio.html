@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+
+ 
+
+    <title>História ....</title>
+</head>
+
+<body>
+<header>
+        
+        <h1>IFMUNDO</h1>
+        <nav>
+            <a href="comites.html">Comitês</a>
+        </nav>
+        <nav>
+            <a href="Fun.html">Funções</a>
+        </nav>
+</header>
+
+    <!-- Botão de menu (hambúrguer) -->
+<div class="menu-toggle">&#9776;</div>
+
+<!-- Menu lateral -->
+<nav class="menu">
+  <a href="index.html">Inicio</a>
+  <a href="inscricoes.html">Inscrições</a>
+  <a href="comites.html">Comitês</a>
+  <a href="fao.html">FAO</a>
+  <a href="FIFA.html">FIFA</a>
+  <a href="CSNU.html">CSNU</a>
+  <a href="UNODC.html">UNODC</a><a href="Fun.html">FUNÇÕES</a>
+</nav>
+
+<!-- Script -->
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  // abre o menu e esconde o botão
+  toggle.addEventListener('click', () => {
+    menu.classList.add('open');
+    toggle.style.display = 'none';
+  });
+
+  // fecha o menu ao clicar nele e mostra o botão novamente
+  menu.addEventListener('click', () => {
+    menu.classList.remove('open');
+    toggle.style.display = 'block';
+  });
+</script>
+
+<!-- CSS -->
+<style>
+  /* Botão de menu (hambúrguer) */
+  .menu-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  /* Menu lateral */
+  nav.menu {
+    position: fixed;
+    top: 0;
+    left: -350px;
+    width: 300px;
+    height: 100%;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    border-radius: 0 20px 20px 0;
+  }
+
+  nav.menu.open {
+    left: 0;
+  }
+
+  nav.menu a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 12px 0;
+    font-size: 1.2m;
+  }
+
+  nav.menu a:hover {
+    background: #f0f0f0;
+    border-radius: 8px;
+  }
+
+   footer {
+      position: fixed;
+      bottom: 8px;
+      right: 12px;
+      font-size: 0.9em; /* menor */
+      color: #ffffff;
+      z-index: 1002;
+    }
+    footer a {
+      color: #797474;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    
+</style>
+
+     <main>
+        
+      
+
+        <h2>Construa seu futuro com diplomacia</h2>
+        
+        <p>O IFMUNDO é um projeto acadêmico desenvolvido pelo Instituto Federal de Minas Gerais Campus São João Evangelista. Ele consiste em um debate simulado inspirado na antiga Liga das Nações Unidas, no qual os estudantes assumem o papel de delegados de diferentes países e organizações internacionais. Durante o evento, os participantes discutem temas de relevância global, defendendo posições e interesses de suas nações de forma diplomática e fundamentada, em um ambiente que reproduz a dinâmica das negociações multilaterais.</p>
+        </details>
+        <h2>Finalidade</h2>
+
+        <p>O principal propósito do IFMUNDO é proporcionar aos estudantes uma vivência prática de como funcionam os processos de diálogo e negociação entre países. Além de estimular a consciência crítica sobre questões internacionais, o projeto busca desenvolver competências essenciais como argumentação, oratória, liderança e capacidade de negociação. Trata-se de uma oportunidade de formação cidadã, que valoriza o respeito às diferenças, a cooperação e a busca por soluções conjuntas diante de problemas complexos.</p>
+        
+        <h2>Funcionamento</h2>
+
+        <p>No IFMUNDO, cada estudante é designado para representar um país ou organização, devendo pesquisar previamente sua política externa e posicionamentos históricos. Durante os debates, os delegados defendem seus pontos de vista, negociam acordos e constroem resoluções coletivas. A condução segue regras formais que garantem ordem e imparcialidade, aproximando os participantes da realidade dos organismos internacionais. Ao final, os melhores delegados são reconhecidos pelo desempenho, postura e capacidade de negociação</p>
+        
+        <h2>Oportunidades</h2>
+
+        <p>Os estudantes que se destacam no IFMUNDO recebem uma oportunidade única: participar de um evento semelhante realizado na PUC Minas, em escala muito maior e com a presença de delegados de diversas instituições. O campus de São João Evangelista garante todo o suporte necessário para essa experiência, incluindo viagem, hospedagem, alimentação e inscrição. Dessa forma, os alunos podem ampliar seus horizontes acadêmicos e culturais, vivenciando intensamente um ambiente de debates internacionais.</p>
+            
+    
+
+    </main>
+
+<!-- Rodapé -->
+  <footer>
+    <a href="https://www.instagram.com/fael_cmartins?igsh=bnRwNG94bjcyM2px&utm_source=qr" target="_blank">by @fael</a>
+  </footer>
+
+  <script>
+   
+    toggle.addEventListener('click', () => {
+      menu.classList.add('open');
+      toggle.style.display = 'none';
+    });
+
+    menu.addEventListener('click', () => {
+      menu.classList.remove('open');
+      toggle.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
+
+</body>
+
+</html>

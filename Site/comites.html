@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>IFMundo</title>
+</head>
+
+<body>
+  <header>
+    <h1>Escolha seu comitê</h1>
+    <nav>
+      <a href="FAO.html">FAO</a>
+      <a href="FIFA.html">FIFA</a>
+      <a href="CSNU.html">CSNU</a>
+      <a href="UNODC.html">UNODC</a>
+      <a href="inicio.html">Voltar</a>
+    </nav>
+  </header>
+
+  <!-- Botão de menu (hambúrguer) -->
+  <div class="menu-toggle">&#9776;</div>
+
+  <!-- Menu lateral -->
+  <nav class="menu">
+    <a href="index.html">Início</a>
+    <a href="Funcoes.html">Funções</a>
+    <a href="comites.html">Comitês</a>
+    <a href="FAO.html">FAO</a>
+    <a href="FIFA.html">FIFA</a>
+    <a href="CSNU.html">CSNU</a>
+    <a href="UNODC.html">UNODC</a><a href="Fun.html">FUNÇÕES</a>
+   
+  </nav>
+
+  <main>
+    <section class="comite">
+      <h2>FIFA</h2>
+      <p>Este comitê discute estratégias para enfrentar o preconceito enraizado no esporte, especialmente no futebol. O
+        objetivo é promover inclusão, respeito e diversidade, utilizando a influência global da FIFA para conscientizar
+        atletas, dirigentes e torcedores, além de implementar políticas de punição a atos discriminatórios.</p>
+    </section>
+
+    <section class="comite">
+      <h2>FAO</h2>
+      <p>A FAO busca coordenar esforços internacionais para reduzir a insegurança alimentar no continente africano. O
+        comitê debate soluções para problemas como escassez de recursos hídricos, degradação ambiental, pobreza
+        estrutural e conflitos armados, propondo políticas de agricultura sustentável e fortalecimento das comunidades
+        rurais.</p>
+    </section>
+
+    <section class="comite">
+      <h2>CSNU</h2>
+      <p>O Conselho de Segurança da ONU enfrenta os desafios da bipolaridade entre Estados Unidos e União Soviética, que
+        até 1987 condicionava suas decisões. O comitê analisa as consequências dessa disputa, como a paralisia
+        decisória, os conflitos por procuração e a limitação da ONU em atuar como mediadora imparcial.</p>
+    </section>
+
+    <section class="comite">
+      <h2>UNODC</h2>
+      <p>O UNODC coordena políticas globais de enfrentamento ao narcotráfico, oferecendo apoio técnico e institucional a
+        países emergentes. O comitê discute como rotas internacionais, vulnerabilidade socioeconômica e fragilidade
+        institucional tornam o combate mais complexo, exigindo integração entre repressão qualificada, prevenção
+        comunitária e políticas de saúde pública.</p>
+    </section>
+  </main>
+
+  <!-- Script -->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.add('open');
+      toggle.style.display = 'none';
+    });
+
+    menu.addEventListener('click', () => {
+      menu.classList.remove('open');
+      toggle.style.display = 'block';
+    });
+  </script>
+
+  <!-- CSS interno (pode ficar em estilo.css) -->
+  <style>
+    .menu-toggle {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 2em;
+      color: white;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    nav.menu {
+      position: fixed;
+      top: 0;
+      left: -350px;
+      width: 300px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      transition: left 0.3s ease;
+      z-index: 1000;
+      border-radius: 0 20px 20px 0;
+    }
+
+    nav.menu.open {
+      left: 0;
+    }
+
+    nav.menu a {
+      display: block;
+      color: black;
+      text-decoration: none;
+      padding: 12px 0;
+      font-size: 1.2em;
+    }
+
+    nav.menu a:hover {
+      background: #f0f0f0;
+      border-radius: 8px;
+    }
+  </style>
+</body>
+
+</html>

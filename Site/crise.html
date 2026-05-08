@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>IFMundo - Crise</title>
+</head>
+<body>
+  <header>
+    <h1>Crise</h1>
+    <nav>
+      <a href="https://drive.google.com/file/d/18LFPjlywVRk_F553wD7587tJC4rg_Nvf/view?usp=drivesdk">Treinamentos</a>
+      <a href="erro.html">Aprovados</a>
+      <a href="Fun.html">Voltar</a>
+    </nav>
+  </header>
+
+  <!-- Botão de menu (hambúrguer) -->
+<div class="menu-toggle">&#9776;</div>
+
+<!-- Menu lateral -->
+<nav class="menu">
+  <a href="index.html">Inicio</a>
+  <a href="inscricoes.html">Inscrições</a>
+  <a href="comites.html">Comitês</a>
+  <a href="fao.html">FAO</a>
+  <a href="FIFA.html">FIFA</a>
+  <a href="CSNU.html">CSNU</a>
+  <a href="UNODC.html">UNODC</a><a href="Fun.html">FUNÇÕES</a>
+</nav>
+
+  <main>
+    <section class="comite">
+      <h2>O que é a Comissão de Crise?</h2>
+      <p>A Crise é o motor que mantém os debates do IFMundo vivos e desafiadores. Esta equipe não fica fixa em apenas uma sala; eles circulam pelo evento monitorando o ritmo das discussões. Quando um debate fica estagnado ou precisa de um novo rumo, a equipe de crise entra em ação com intervenções estratégicas que mudam completamente o cenário geopolítico da simulação.</p>
+    </section>
+
+    <section class="comite">
+      <h2>Atuação e Intervenção</h2>
+      <p>Os membros da crise podem introduzir "Breaking News", documentos secretos vazados ou situações de emergência internacional (como desastres naturais ou conflitos súbitos). O objetivo é forçar os delegados a abandonarem seus discursos prontos e reagirem com rapidez, testando sua capacidade de adaptação e tomada de decisão sob pressão.</p>
+    </section>
+
+    <section class="comite">
+      <h2>Perfil do Integrante</h2>
+      <p>Para ser da crise, é preciso gostar de improvisação, ter um bom conhecimento de atualidades e saber atuar. É a função ideal para quem quer ter uma visão geral do evento e influenciar diretamente o destino de cada comitê, garantindo que a simulação seja o mais realista e impactante possível.</p>
+    </section>
+  </main>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    toggle.addEventListener('click', () => { menu.classList.add('open'); toggle.style.display = 'none'; });
+    menu.addEventListener('click', () => { menu.classList.remove('open'); toggle.style.display = 'block'; });
+  </script>
+
+  <style>
+    .menu-toggle { position: absolute; top: 20px; left: 20px; font-size: 2em; color: white; cursor: pointer; z-index: 1001; }
+    nav.menu { position: fixed; top: 0; left: -350px; width: 300px; height: 100%; background: rgba(255, 255, 255, 0.9); box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); padding: 20px; transition: left 0.3s ease; z-index: 1000; border-radius: 0 20px 20px 0; }
+    nav.menu.open { left: 0; }
+    nav.menu a { display: block; color: black; text-decoration: none; padding: 12px 0; font-size: 1.2em; }
+  </style>
+</body>
+</html>
