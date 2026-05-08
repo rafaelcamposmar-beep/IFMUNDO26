@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>História ....</title>
+</head>
+
+
+
+<body>
+<header>
+        <!-- Exemplo de título principal -->
+        <h1>UNODC</h1>
+        <p>Escritório das Nações Unidas sobre Drogas e Cimes</p>
+        <nav>
+        <nav>
+            <a href="https://www.youtube.com/">Dossiês</a>
+        </nav>
+            <a href="comites.html">Voltar</a>
+        </nav>
+</header>
+
+      <!-- Botão de menu (hambúrguer) -->
+<div class="menu-toggle">&#9776;</div>
+
+<!-- Menu lateral -->
+<nav class="menu">
+  <a href="index.html">Inicio</a>
+  <a href="inscricoes.html">Inscrições</a>
+  <a href="comites.html">Comitês</a>
+  <a href="fao.html">FAO</a>
+  <a href="FIFA.html">FIFA</a>
+  <a href="CSNU.html">CSNU</a>
+  <a href="UNODC.html">UNODC</a><a href="Fun.html">FUNÇÕES</a>
+</nav>
+
+<!-- Script -->
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  // abre o menu e esconde o botão
+  toggle.addEventListener('click', () => {
+    menu.classList.add('open');
+    toggle.style.display = 'none';
+  });
+
+  // fecha o menu ao clicar nele e mostra o botão novamente
+  menu.addEventListener('click', () => {
+    menu.classList.remove('open');
+    toggle.style.display = 'block';
+  });
+</script>
+
+<!-- CSS -->
+<style>
+  /* Botão de menu (hambúrguer) */
+  .menu-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  /* Menu lateral */
+  nav.menu {
+    position: fixed;
+    top: 0;
+    left: -350px;
+    width: 300px;
+    height: 100%;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    border-radius: 0 20px 20px 0;
+  }
+
+  nav.menu.open {
+    left: 0;
+  }
+
+  nav.menu a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 12px 0;
+    font-size: 1.2em;
+  }
+
+  nav.menu a:hover {
+    background: #f0f0f0;
+    border-radius: 8px;
+  }
+ </style>
+
+
+     <main>
+        
+        <h2>Contexto Atual</h2>
+        
+        
+        <p>O narcotráfico é um dos maiores desafios enfrentados pelos países emergentes, pois afeta diretamente a segurança pública, a estabilidade política e o desenvolvimento econômico. O UNODC (Escritório das Nações Unidas sobre Drogas e Crime) atua como organismo central na coordenação de políticas globais de enfrentamento, oferecendo apoio técnico e institucional para governos que lidam com redes criminosas transnacionais. A expansão das rotas internacionais, a vulnerabilidade socioeconômica e a fragilidade institucional tornam o combate ainda mais complexo, exigindo estratégias que integrem repressão qualificada, prevenção comunitária e políticas de saúde pública.  </p>
+
+
+
+        <h2>História e Evolução</h2>
+
+     <p>O UNODC foi criado em 1997, a partir da fusão do Programa das Nações Unidas para o Controle Internacional de Drogas e do Centro de Prevenção ao Crime. Inicialmente, sua atuação estava voltada para medidas de repressão e controle de substâncias ilícitas, mas ao longo dos anos evoluiu para uma abordagem multidimensional. Nos anos 2000, o organismo passou a enfatizar políticas de redução da demanda, prevenção ao uso de drogas e fortalecimento institucional nos países emergentes. Essa evolução histórica demonstra uma transição de estratégias puramente policiais para iniciativas que consideram os impactos sociais, econômicos e políticos do narcotráfico, reconhecendo que o problema não pode ser resolvido apenas com força repressiva.  
+</p>
+      <h2>Estrutura e Funcionamento</h2>
+        
+      <p>O UNODC funciona como uma agência da ONU com sede em Viena e coordena programas globais e regionais. Sua estrutura é composta por divisões voltadas para drogas ilícitas, crime organizado, corrupção e terrorismo. Nos países emergentes, o UNODC atua por meio de escritórios regionais que oferecem assistência técnica, treinamento de forças policiais, apoio legislativo e fortalecimento institucional. Além disso, promove a cooperação entre governos, sociedade civil e organismos internacionais, buscando alinhar políticas nacionais às convenções globais da ONU. Essa estrutura garante que o enfrentamento ao narcotráfico seja articulado em diferentes níveis, do local ao internacional, e que os países emergentes recebam suporte para superar suas fragilidades.  </p>
+      <h2>Programas Globais</h2>
+      
+      <p>O UNODC funciona como uma agência da ONU com sede em Viena e coordena programas globais e regionais. Sua estrutura é composta por divisões voltadas para drogas ilícitas, crime organizado, corrupção e terrorismo. Nos países emergentes, o UNODC atua por meio de escritórios regionais que oferecem assistência técnica, treinamento de forças policiais, apoio legislativo e fortalecimento institucional. Além disso, promove a cooperação entre governos, sociedade civil e organismos internacionais, buscando alinhar políticas nacionais às convenções globais da ONU. Essa estrutura garante que o enfrentamento ao narcotráfico seja articulado em diferentes níveis, do local ao internacional, e que os países emergentes recebam suporte para superar suas fragilidades.  
+</p>
+      
+      <h2>Desafios e Perspectivas Futuras</h2>
+      
+        <p>Os países emergentes enfrentam desafios específicos no combate ao narcotráfico, como a fragilidade institucional, a corrupção, a falta de recursos tecnológicos e a vulnerabilidade social que alimenta o recrutamento por organizações criminosas. A expansão das rotas de tráfico, especialmente em regiões da América Latina, África e Ásia, intensifica a pressão sobre governos que muitas vezes não possuem capacidade plena de resposta. O futuro, no entanto, aponta para perspectivas de maior cooperação internacional, uso de tecnologias avançadas de rastreamento e inteligência artificial para monitorar fluxos ilícitos, além da integração entre políticas de segurança e desenvolvimento social. O UNODC defende que somente uma abordagem multidimensional — que envolva repressão qualificada, prevenção comunitária, fortalecimento institucional e políticas de saúde pública — poderá mitigar de forma efetiva o narcotráfico nos países emergentes, transformando o enfrentamento em uma estratégia sustentável e duradoura.  
+</p>
+
+    
+
+    </main>
+</body>
+
+<!-- Rodapé -->
+  <footer>
+    <a href="https://www.instagram.com/fael_cmartins?igsh=bnRwNG94bjcyM2px&utm_source=qr" target="_blank">by @fael_cmartins</a>
+  </footer>
+
+
+</html>
+
+
+    
