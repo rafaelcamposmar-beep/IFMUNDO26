@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>IFMundo - Documentos</title>
+</head>
+<body>
+  <header>
+    <h1>Documentos Oficiais</h1>
+    <nav>
+      <a href="https://docs.google.com/document/d/12XuRypWYV__d3sakOzcoHaSzNckvBaXo/edit?usp=drivesdk&ouid=111265727207734841700&rtpof=true&sd=true">Modelo</a>
+      <a href="FUN.html">Voltar</a>
+    </nav>
+  </header>
+
+  <div class="menu-toggle">&#9776;</div>
+  <nav class="menu">
+    <a href="index.html">Início</a>
+    <a href="Funcoes.html">Funções</a>
+    <a href="comites.html">Comitês</a>
+    <a href="FUN.html">VOLTAR</a>
+  </nav>
+
+  <main>
+    <section class="comite">
+      <h2>O que é o DPO?</h2>
+      <p>O Documento de Posição Oficial (DPO) é o registro essencial que toda delegação deve entregar antes do início das sessões. Ele serve para que a Mesa Diretora e as outras nações saibam exatamente qual é a postura do seu país em relação aos problemas discutidos no comitê. É através dele que a diplomacia começa a ser desenhada antes mesmo do primeiro discurso.</p>
+    </section>
+
+    <section class="comite">
+      <h2>A Frase Inicial e Apresentação</h2>
+      <p>A abertura do seu DPO (e do seu primeiro discurso) é crucial. A delegação deve sempre começar se apresentando formalmente e cumprimentando a Mesa e os demais Estados-membros. Uma boa frase inicial deve desejar um debate produtivo e diplomático, demonstrando desde o primeiro momento que seu país está disposto a colaborar para encontrar soluções, mas mantendo firme sua soberania e princípios.</p>
+    </section>
+
+    <section class="comite">
+      <h2>Estrutura do Posicionamento</h2>
+      <p>Um bom DPO deve ser dividido de forma lógica: primeiro, um breve histórico do tema sob a ótica da sua nação; segundo, as ações que seu país já tomou no passado; e, por fim, as soluções que você propõe para o futuro. O texto deve ser direto e mostrar claramente o que a delegação defende e o que ela não aceita negociar durante o debate.</p>
+    </section>
+
+    <section class="comite">
+      <h2>Importância nos Debates</h2>
+      <p>O DPO funciona como o seu "guia de sobrevivência". Em momentos de dúvida durante o debate, é a ele que você deve recorrer para garantir que não está fugindo da política externa real do seu país. Além disso, uma boa escrita no DPO demonstra preparo acadêmico e pode ser um diferencial para premiações de Melhor Delegação.</p>
+    </section>
+  </main>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    toggle.addEventListener('click', () => { menu.classList.add('open'); toggle.style.display = 'none'; });
+    menu.addEventListener('click', () => { menu.classList.remove('open'); toggle.style.display = 'block'; });
+  </script>
+
+  <style>
+    .menu-toggle { position: absolute; top: 20px; left: 20px; font-size: 2em; color: white; cursor: pointer; z-index: 1001; }
+    nav.menu { position: fixed; top: 0; left: -350px; width: 300px; height: 100%; background: rgba(255, 255, 255, 0.9); box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); padding: 20px; transition: left 0.3s ease; z-index: 1000; border-radius: 0 20px 20px 0; }
+    nav.menu.open { left: 0; }
+    nav.menu a { display: block; color: black; text-decoration: none; padding: 12px 0; font-size: 1.2em; }
+  </style>
+</body>
+</html>
